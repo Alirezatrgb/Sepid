@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_margin="5dp"
+            android:id="@+id/Search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="جستجو"
+                    android:inputType="text" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0A000000"
+            android:horizontalSpacing="15dp"
+            android:numColumns="2"
+            android:verticalSpacing="15dp"
+            android:layout_below="@id/Search_edit_text"/>
+
+
+</RelativeLayout>
+
+
+
+
